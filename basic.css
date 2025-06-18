@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=Ysabeau:ital,wght@0,1..1000;1,1..1000&display=swap");
+* {
+  font-family: "Ysabeau", sans-serif;
+}
+
+:root {
+  --hue: 200;
+  --saturation: 70%;
+  --lightness: 55%;
+  --main-color: hsl(var(--hue), var(--saturation), var(--lightness));
+
+  --text-white: hsl(0, 0%, 100%);
+  --text-light-gray: hsl(0, 0%, 96%);
+  --text-x-dark-gray: hsl(0, 0%, 10%);
+  --text-dark-gray: hsl(0, 0%, 20%);
+
+  --body-bg-color: hsl(var(--hue), 60%, 94%);
+  --bg-color: hsl(var(--hue), 60%, 96%);
+  --bg-white: hsl(0, 0%, 100%);
+
+  --border-color: hsl(var(--hue), 48%, 80%);
+
+  --shadow: 0 0 10px hsla(var(--hue), 57%, 63%, 0.3);
+  --focus-shadow: 0 0 10px hsla(var(--hue), 57%, 63%, 0.6);
+  --fs-4x1: 50px;
+  --fs-3x1: 35px;
+  --fs-2x1: 26px;
+  --fs-lg: 18px;
+  --fs-md: 16px;
+  --fs-sm: 14px;
+}
+
+.payment-service{
+    grid-column: span 12;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.s-item1,
+.s-item2 {
+    margin-top: 50px;
+}
+
+.service-home-text{
+    margin-top: 50px;
+}
+
+.fa-solid.fa-plus {
+  color: var(--main-color);
+  font-size: 25px;
+}
+
+@media (max-width: 575px) {
+    .payment-service{
+        gap: 35px;
+    }
+  .fa-solid.fa-plus {
+    font-size: 20px;
+  }
+  .s-item1 h3,
+  .s-item2 h3 {
+    font-size: var(--fs-md);
+  }
+}

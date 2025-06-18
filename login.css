@@ -1,0 +1,157 @@
+@import url("https://fonts.googleapis.com/css2?family=Ysabeau:ital,wght@0,1..1000;1,1..1000&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Ysabeau", sans-serif;
+}
+.login-container {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 30px;
+  margin-top: 40px;
+}
+.form {
+  position: absolute;
+  max-width: 430px;
+  width: 100%;
+  padding: 30px;
+  border-radius: 6px;
+  background-color: var(--bg-color);
+  box-shadow: var(--shadow);
+}
+.form.singup {
+  opacity: 0;
+  pointer-events: none;
+}
+.forms.show-singup .form.singup {
+  opacity: 1;
+  pointer-events: auto;
+}
+.forms.show-singup .form.login {
+  opacity: 0;
+  pointer-events: none;
+}
+.login-header {
+  font-size: 28px;
+  font-weight: 700;
+  text-align: center;
+}
+.singup-header {
+  font-size: 28px;
+  font-weight: 700;
+  text-align: center;
+}
+form {
+  margin-top: 30px;
+}
+form .field {
+  height: 50px;
+  width: 100%;
+  margin-top: 20px;
+}
+.field input,
+.field button {
+  height: 100%;
+  width: 100%;
+  border: none;
+  font-size: 16px;
+  font-weight: 400;
+  border-radius: 6px;
+}
+.field input {
+  outline: none;
+  padding: 0 15px;
+  border: 1px solid #cacaca;
+  background: var(--bg-white);
+}
+.field input::placeholder {
+  color: #232323;
+}
+.field input:focus {
+  border-bottom-width: 2px;
+}
+.field button {
+  background-color: var(--main-color);
+  color: var(--text-x-dark-gray);
+  transition: 0.3s;
+}
+.field button:hover {
+  background: transparent;
+  cursor: pointer;
+  border: 1px solid var(--border-color);
+}
+.form-link {
+  text-align: center;
+  margin-top: 10px;
+}
+.form-link span,
+.form-link a {
+  font-size: 14px;
+  font-weight: 400;
+}
+.form a {
+  color: var(--main-color);
+  text-decoration: none;
+}
+.form a:hover {
+  text-decoration: underline;
+}
+.line {
+  position: relative;
+  height: 1px;
+  width: 100%;
+  margin: 30px 0;
+  background-color: #d4d4d4;
+}
+.line::before {
+  content: "OR";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: var(--bg-color);
+  padding: 0 15px;
+}
+.logwith {
+  text-align: center;
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  padding: 10px 0 30px;
+}
+.media-options {
+  display: flex;
+  justify-content: center;
+  column-gap: 15px;
+}
+.media-options .field {
+  height: 50px;
+  width: 50px;
+  background-color: var(--main-color);
+  padding: 12px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s;
+}
+.media-options .field:hover {
+  background-color: transparent;
+  border: 1px solid var(--border-color);
+}
+.media-options a:hover {
+  text-decoration: none;
+}
+.media-options .fab {
+  color: var(--text-x-dark-gray);
+  font-size: 20px;
+}
+@media screen and (max-width: 400px) {
+  .form {
+    padding: 15px 10px;
+  }
+}

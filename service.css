@@ -1,0 +1,494 @@
+@import url("https://fonts.googleapis.com/css2?family=Ysabeau:ital,wght@0,1..1000;1,1..1000&display=swap");
+* {
+  font-family: "Ysabeau", sans-serif;
+}
+
+:root {
+  --hue: 200;
+  --saturation: 70%;
+  --lightness: 55%;
+  --main-color: hsl(var(--hue), var(--saturation), var(--lightness));
+
+  --text-white: hsl(0, 0%, 100%);
+  --text-light-gray: hsl(0, 0%, 96%);
+  --text-x-dark-gray: hsl(0, 0%, 10%);
+  --text-dark-gray: hsl(0, 0%, 20%);
+
+  --body-bg-color: hsl(var(--hue), 60%, 94%);
+  --bg-color: hsl(var(--hue), 60%, 96%);
+  --bg-white: hsl(0, 0%, 100%);
+
+  --border-color: hsl(var(--hue), 48%, 80%);
+
+  --shadow: 0 0 10px hsla(var(--hue), 57%, 63%, 0.3);
+  --focus-shadow: 0 0 10px hsla(var(--hue), 57%, 63%, 0.6);
+  --fs-4x1: 50px;
+  --fs-3x1: 35px;
+  --fs-2x1: 26px;
+  --fs-lg: 18px;
+  --fs-md: 16px;
+  --fs-sm: 14px;
+}
+
+.service-home {
+  padding: 100px 0 60px;
+}
+.service-home-details,
+.slider-container {
+  grid-column: span 6;
+  margin-top: 20px;
+}
+.slider-container {
+  width: 85%;
+  overflow: hidden;
+  position: relative;
+
+}
+.slider {
+  display: flex;
+  width: 100%;
+  transition: transform 1s ease-in-out;
+  border-radius: 15px;
+}
+.slider img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 15px;
+}
+.slider-container h2 {
+  font-size: var(--fs-3x1);
+  font-weight: 600;
+  padding: 10px 0;
+  margin: 0 0 10px 0;
+  text-align: center;
+  background: var(--bg-color);
+  border-radius: 30px;
+}
+.service-home-details{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 5px 25px;
+  background-color: var(--bg-color);
+  border-radius: 15px;
+  box-shadow: var(--shadow);
+}
+.service-home-details-text p {
+  font-size: var(--fs-lg);
+  text-align: justify;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+.rating-info p,
+.main-price-info p {
+  font-size: var(--fs-2x1);
+  font-weight: 600;
+}
+.rating-star {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.price-info{
+  margin-bottom: 8px;
+}
+.rating-star h5 {
+  font-size: var(--fs-2x1);
+  margin: 0 8px 8px 0;
+}
+.rating-star i {
+  color: var(--main-color);
+  font-size: var(--fs-md);
+}
+.rating-price-info {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 20px 0;
+}
+.main-price-info h5 {
+  font-size: var(--fs-2x1);
+}
+.price-info-value span {
+  font-size: var(--fs-sm);
+  font-weight: 500;
+}
+
+/* --------- form details --------- */
+
+.service-home-text {
+  grid-column: span 12;
+}
+.service-home-text form h2 {
+  margin: 30px 0 40px 0;
+  font-weight: 600;
+  font-size: var(--fs-3x1);
+}
+.form-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+.personal-detail {
+  padding: 8px;
+  display: flex;
+  flex-direction: column;
+  background: var(--bg-color);
+  border-radius: 10px;
+  box-shadow: var(--shadow);
+}
+.personal-detail h3 {
+  margin: 15px 10px;
+  font-size: var(--fs-lg);
+  font-weight: 600;
+}
+.personal-detail input {
+  padding: 10px;
+  margin-top: 25px;
+  font-size: var(--fs-md);
+  border: 1px solid var(--border-color);
+  border-radius: 30px;
+  outline: none;
+  background: var(--bg-color);
+  color: var(--text-x-dark-gray);
+}
+
+.address-detail {
+  padding: 8px;
+  display: flex;
+  flex-direction: column;
+  background: var(--bg-color);
+  border-radius: 10px;
+  box-shadow: var(--shadow);
+}
+.address-detail h3 {
+  margin: 15px 10px;
+  font-size: var(--fs-lg);
+  font-weight: 600;
+}
+.address-detail input {
+  padding: 10px;
+  margin-top: 25px;
+  font-size: var(--fs-md);
+  border: 1px solid var(--border-color);
+  border-radius: 30px;
+  outline: none;
+  background: var(--bg-color);
+  color: var(--text-x-dark-gray);
+}
+
+.service-detail {
+  padding: 8px;
+  display: flex;
+  flex-direction: column;
+  background: var(--bg-color);
+  border-radius: 10px;
+  box-shadow: var(--shadow);
+}
+.service-detail h3 {
+  margin: 15px 10px;
+  font-size: var(--fs-lg);
+  font-weight: 600;
+}
+.service-detail input {
+  padding: 10px;
+  margin: 0 0 17px 0;
+  font-size: var(--fs-md);
+  color: var(--text-dark-gray);
+  border: 1px solid var(--border-color);
+  border-radius: 30px;
+  width: 100%;
+  outline: none;
+  background: var(--bg-color);
+  color: var(--text-x-dark-gray);
+}
+.service-type select {
+  padding: 10px;
+  margin: 0 0 17px 0;
+  font-size: var(--fs-md);
+  color: var(--text-x-dark-gray);
+  border: 1px solid var(--border-color);
+  border-radius: 30px;
+  width: 100%;
+  outline: none;
+  background: var(--bg-color);
+}
+.service-frequency select {
+  padding: 10px;
+  margin: 0 0 17px 0;
+  font-size: var(--fs-md);
+  color: var(--text-x-dark-gray);
+  border: 1px solid var(--border-color);
+  border-radius: 30px;
+  width: 100%;
+  outline: none;
+  background: var(--bg-color);
+}
+
+.worker-detail {
+  padding: 8px;
+  display: flex;
+  flex-direction: column;
+  background: var(--bg-color);
+  border-radius: 10px;
+  box-shadow: var(--shadow);
+}
+.worker-detail h3 {
+  margin: 15px 10px;
+  font-size: var(--fs-lg);
+  font-weight: 600;
+}
+.worker-detail select,
+.worker-detail input {
+  padding: 10px;
+  margin: 0 0 17px 0;
+  font-size: var(--fs-md);
+  color: var(--text-x-dark-gray);
+  border: 1px solid var(--border-color);
+  border-radius: 30px;
+  width: 100%;
+  outline: none;
+  background: var(--bg-color);
+}
+.worker-detail #main-price {
+  margin: 0 0 15px 0;
+  font-size: var(--fs-lg);
+  font-weight: 600;
+  color: var(--text-x-dark-gray);
+  background: var(--bg-color);
+  padding: 10px;
+  border: 1px solid var(--border-color);
+  border-radius: 30px;
+}
+
+.service-home-text .terms {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin: 20px 0 0 0;
+}
+.service-home-text p {
+  font-size: var(--fs-md);
+  margin: 0;
+}
+.service-home-text form .buy {
+  cursor: pointer;
+  padding: 8px 30px;
+  margin: 15px 0 0 0;
+}
+
+/* ---------- responsive ----------- */
+
+@media (max-width: 1199px) {
+  .service-home-img h2 {
+    font-size: var(--fs-3x1);
+  }
+  .service-home-img p {
+    font-size: var(--fs-lg);
+    width: 80%;
+  }
+  .service-home-text form h2 {
+    font-size: var(--fs-2x1);
+  }
+  .personal-detail h3,
+  .address-detail h3,
+  .service-detail h3,
+  .worker-detail h3 {
+    font-size: var(--fs-lg);
+  }
+  .personal-detail input,
+  .address-detail input,
+  .service-detail input,
+  .service-type select,
+  .service-frequency select,
+  .worker-detail select {
+    font-size: var(--fs-md);
+    width: 90%;
+  }
+  .service-home-text form .buy {
+    padding: 8px 25px;
+  }
+}
+@media (max-width: 991px) {
+  .slider-container h2 {
+    font-size: var(--fs-3x1);
+  }
+  .service-home-details{
+    padding: 10px 15px;
+  }
+  .service-home-details-text p {
+    font-size: var(--fs-md);
+  }
+  .rating-info p,
+  .main-price-info p {
+    font-size: var(--fs-lg);
+  }
+  .rating-star h5 {
+    font-size: var(--fs-md);
+  }
+  .rating-star i {
+    font-size: var(--fs-sm);
+  }
+  .rating-price-info {
+    margin: 10px 0;
+  }
+  .main-price-info h5 {
+    font-size: var(--fs-md);
+  }
+  .service-home-text form h2 {
+    font-size: var(--fs-2x1);
+  }
+  .service-imgs {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .form-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .personal-detail h3,
+  .address-detail h3,
+  .service-detail h3,
+  .worker-detail h3 {
+    font-size: var(--fs-md);
+  }
+  .personal-detail input,
+  .address-detail input,
+  .service-detail input,
+  .service-type select,
+  .service-frequency select,
+  .worker-detail select {
+    font-size: var(--fs-sm);
+    width: 100%;
+  }
+  .service-home-text form .buy {
+    padding: 8px 20px;
+  }
+}
+@media (max-width: 767px) {
+  .slider-container,
+  .service-home-details {
+    grid-column: span 12;
+  }
+  .slider-container{
+    width: 100%;
+  }
+  .slider-container h2 {
+    font-size: var(--fs-3x1);
+  }
+  .service-home-details{
+    padding: 10px 20px;
+  }
+  .service-home-details-text p {
+    font-size: var(--fs-md);
+    margin: 10px 0;
+  }
+  .rating-info p,
+  .main-price-info p {
+    font-size: var(--fs-2x1);
+  }
+  .rating-star h5 {
+    font-size: var(--fs-lg);
+  }
+  .rating-star i {
+    font-size: var(--fs-md);
+  }
+  .rating-price-info {
+    margin: 15px 0;
+  }
+  .main-price-info h5 {
+    font-size: var(--fs-lg);
+  }
+  .form-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .service-home-text form h2 {
+    font-size: var(--fs-2x1);
+  }
+  .personal-detail h3,
+  .address-detail h3,
+  .service-detail h3,
+  .worker-detail h3 {
+    font-size: var(--fs-lg);
+  }
+  .personal-detail input,
+  .address-detail input,
+  .service-detail input,
+  .service-type select,
+  .service-frequency select,
+  .worker-detail select {
+    font-size: var(--fs-sm);
+    width: 100%;
+  }
+  .service-home-text form .buy {
+    padding: 8px 15px;
+  }
+}
+
+@media (max-width: 575px) {
+  .slider-container,
+  .service-home-details {
+    grid-column: span 12;
+  }
+  .slider-container h2 {
+    font-size: var(--fs-3x1);
+  }
+  .service-home-details{
+    padding: 10px 15px;
+  }
+  .service-home-details-text p {
+    font-size: var(--fs-md);
+    margin: 10px 0;
+  }
+  .rating-info p,
+  .main-price-info p {
+    font-size: var(--fs-2x1);
+  }
+  .rating-star h5 {
+    font-size: var(--fs-lg);
+  }
+  .rating-star i {
+    font-size: var(--fs-md);
+  }
+  .rating-price-info {
+    margin: 20px 0;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+  .main-price-info h5 {
+    font-size: var(--fs-2x1);
+  }
+  .service-home-text form h2 {
+    font-size: var(--fs-3x1);
+  }
+  .service-imgs {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .form-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .personal-detail h3,
+  .address-detail h3,
+  .service-detail h3,
+  .worker-detail h3 {
+    font-size: var(--fs-lg);
+    margin-top: 10px;
+  }
+  .personal-detail input,
+  .address-detail input {
+    margin-top: 0;
+    margin: 0 0 25px 0;
+  }
+  .personal-detail input,
+  .address-detail input,
+  .service-detail input,
+  .service-type select,
+  .service-frequency select,
+  .worker-detail select {
+    font-size: var(--fs-md);
+    width: 100%;
+  }
+  .service-home-text form .buy {
+    padding: 8px 15px;
+  }
+}

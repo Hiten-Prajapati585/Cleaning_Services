@@ -1,0 +1,50 @@
+.grid {
+  padding: 20px;
+  margin: 8% 0;
+}
+.dashboard-content {
+  grid-column: span 12;
+  background: var(--bg-color);
+  box-shadow: var(--shadow);
+  padding: 10px 20px;
+}
+
+.dashboard-btn {
+  margin: 20px 8px;
+  padding: 10px 20px;
+  background: var(--main-color);
+  color: var(--text-light-gray);
+  border: none;
+  border: 1px solid var(--border-color);
+  cursor: pointer;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+.dashboard-btn:hover {
+  background-color: var(--bg-color);
+  color: var(--txt-x-dark-gray);
+}
+
+.table-container {
+  width: 100%;
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th,
+td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+}
+
+th {
+  background-color: var(--main-color);
+  color: white;
+}

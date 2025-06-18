@@ -1,0 +1,121 @@
+:root {
+  --hue: 200;
+  --saturation: 70%;
+  --lightness: 55%;
+  --main-color: hsl(var(--hue), var(--saturation), var(--lightness));
+
+  --text-white: hsl(0, 0%, 100%);
+  --text-light-gray: hsl(0, 0%, 96%);
+  --text-x-dark-gray: hsl(0, 0%, 10%);
+  --text-dark-gray: hsl(0, 0%, 20%);
+
+  --body-bg-color: hsl(var(--hue), 60%, 94%);
+  --bg-color: hsl(var(--hue), 60%, 96%);
+  --bg-white: hsl(0, 0%, 100%);
+
+  --border-color: hsl(var(--hue), 48%, 80%);
+
+  --shadow: 0 0 10px hsla(var(--hue), 57%, 63%, 0.3);
+  --focus-shadow: 0 0 10px hsla(var(--hue), 57%, 63%, 0.6);
+  --fs-4x1: 50px;
+  --fs-3x1: 35px;
+  --fs-2x1: 26px;
+  --fs-lg: 18px;
+  --fs-md: 16px;
+  --fs-sm: 14px;
+}
+
+.member-home-text,
+.member-home-img {
+  grid-column: span 6;
+  align-self: center;
+}
+.member-home-img img {
+  width: 350px;
+  object-fit: cover;
+  border-radius: 50%;
+  background: var(--bg-color);
+  padding: 10px;
+  box-shadow: var(--shadow);
+}
+.member-home-text h1 {
+  font-size: var(--fs-3x1);
+  margin: 0 0 15px 0;
+}
+.member-home-text p {
+  font-size: var(--fs-lg);
+  margin: 20px 0 0 0;
+  text-align: justify;
+  font-weight: 500;
+}
+.member-grid {
+  margin-top: 100px;
+}
+
+.social-media-links h4 {
+  font-size: var(--fs-2x1);
+  margin: 15px 0;
+  font-weight: 500;
+}
+.media-links {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.media-links a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--main-color);
+  color: var(--text-dark-gray);
+  height: 45px;
+  width: 45px;
+  font-size: var(--fs-lg);
+  border-radius: 50%;
+  transition: 0.3s;
+}
+.media-links a:hover {
+  background: var(--body-bg-color);
+  border: 1px solid var(--main-color);
+  color: var(--main-color);
+}
+
+@media screen and (max-width: 768px) {
+  .member-home-text,
+  .member-home-img {
+    grid-column: span 12;
+    text-align: center;
+  }
+  .member-home-img img {
+    width: 300px;
+  }
+  .member-grid {
+    margin-top: 30px;
+  }
+  .social-media-links h4 {
+    font-size: var(--fs-2x1);
+    margin: 15px 0;
+    font-weight: 500;
+  }
+  .media-links {
+    justify-content: center;
+  }
+  .media-links a {
+    height: 40px;
+    width: 40px;
+    font-size: var(--fs-md);
+  }
+}
+
+.gallery-items-box{
+  grid-column: span 12;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 20px;
+}
+.gallery-item{
+  grid-column: span 4;
+}
+.gallery-item img{
+  border-radius: 10px;
+}

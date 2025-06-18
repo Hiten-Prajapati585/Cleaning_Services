@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BrightWave Cleaners Service</title>
+    <link rel="stylesheet" href="service.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="aos.css" />
+  </head>
+  <body>
+    <div class="preloader js-preloader">
+      <div></div>
+    </div>
+
+    <div class="page-wrapper">
+      <header class="header js-header">
+        <div class="container">
+          <div class="logo" data-aos="fade-down" data-aos-duration="1000">
+            <a href="index.php">BrightWave <span>Cleaners</span></a>
+          </div>
+          <button
+            type="button"
+            class="nav-toggler js-nav-toggler"
+            data-aos="fade-down"
+            data-aos-duration="1000"
+          >
+            <span></span>
+          </button>
+          <nav class="nav js-nav">
+            <ul data-aos="fade-down" data-aos-duration="1000">
+              <li><a href="index.php">Home</a></li>
+              <li><a href="index.php">About</a></li>
+              <li><a href="index.php#services">Services</a></li>
+              <li><a href="index.php#pricing">Pricing</a></li>
+              <li><a href="index.php#team">Team</a></li>
+              <li><a href="index.php#contact">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+
+      <section class="service-home" id="service-home">
+        <div class="container">
+          <div class="grid service-grid">
+            <div class="slider-container">
+              <h2
+                data-aos="fade-up"
+                data-aos-duration="1000"
+                data-aos-delay="200"
+              >
+                Car Cleaning
+              </h2>
+              <div class="slider" data-aos="fade-up" data-aos-duration="1000">
+                <img
+                  src="images/car-cleaning1.webp"
+                  loading="lazy"
+                  alt="Car Cleaning 1"
+                />
+                <img
+                  src="images/car-cleaning2.webp"
+                  loading="lazy"
+                  alt="Car Cleaning 2"
+                />
+                <img
+                  src="images/car-cleaning3.webp"
+                  loading="lazy"
+                  alt="Car Cleaning 3"
+                />
+              </div>
+            </div>
+            <div class="service-home-details">
+              <div class="service-home-details-text">
+                <p class="car-text" data-aos="fade-up" data-aos-duration="1000">
+                  We give your car the care it deserves with our Premium Car
+                  Cleaning Service. Our team of specialists uses high-quality,
+                  eco-friendly products to ensure your vehicle looks as good as
+                  new. From interior detailing to exterior washing, we leave no
+                  spot untouched. Enjoy a spotless finish, fresh interiors, and
+                  the pleasure of driving a clean car. Discover our bespoke
+                  packages that cater to all your car cleaning needs!
+                </p>
+              </div>
+              <div class="rating-price-info">
+                <div class="rating-info">
+                  <p
+                    data-aos="fade-up"
+                    data-aos-duration="1000"
+                    data-aos-delay="100"
+                  >
+                    Rating
+                  </p>
+                  <div
+                    class="rating-star"
+                    data-aos="fade-up"
+                    data-aos-duration="1000"
+                    data-aos-delay="100"
+                  >
+                    <h5>3.9</h5>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                    <i class="fa-regular fa-star"></i>
+                  </div>
+                </div>
+                <div class="price-info">
+                  <div class="main-price-info">
+                    <p
+                      data-aos="fade-up"
+                      data-aos-duration="1000"
+                      data-aos-delay="200"
+                    >
+                      Price
+                    </p>
+                    <h5
+                      class="price-info-value"
+                      data-aos="fade-up"
+                      data-aos-duration="1000"
+                      data-aos-delay="200"
+                    >
+                      $120
+                      <span>(Per worker)</span>
+                    </h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="service-home-text">
+              <form action="./service.php" method="POST">
+                <h2 data-aos="fade-up" data-aos-duration="1000">
+                  Purchase Service :
+                </h2>
+
+                <div class="form-container">
+                  <div class="personal-detail">
+                    <h3 data-aos="fade-up" data-aos-duration="1000">
+                      Personal Details
+                    </h3>
+                    <input
+                      type="text"
+                      name="full_name"
+                      placeholder="Full Name"
+                      class="service-inputs"
+                      id="fullName"
+                      required
+                      data-aos="fade-up"
+                      data-aos-duration="1000"
+                      data-aos-delay="100"
+                    />
+                    <input
+                      type="email"
+                      name="email"
+                      placeholder="Email Address"
+                      class="service-inputs"
+                      id="email"
+                      required
+                      data-aos="fade-up"
+                      data-aos-duration="1000"
+                      data-aos-delay="100"
+                    />
+                    <input
+                      type="tel"
+                      name="phone"
+                      placeholder="Phone Number"
+                      class="service-inputs"
+                      id="phone"
+                      required
+                      data-aos="fade-up"
+                      data-aos-duration="1000"
+                      data-aos-delay="100"
+                    />
+                  </div>
+
+                  <div class="address-detail">
+                    <h3
+                      data-aos="fade-up"
+                      data-aos-duration="1000"
+                      data-aos-delay="200"
+                    >
+                      Address Details
+                    </h3>
+                    <input
+                      type="text"
+                      name="street_address"
+                      placeholder="Street Address"
+                      class="service-inputs"
+                      required
+                      data-aos="fade-up"
+                      data-aos-duration="1000"
+                      data-aos-delay="200"
+                    />
+                    <input
+                      type="text"
+                      name="city"
+                      placeholder="City"
+                      class="service-inputs"
+                      required
+                      data-aos="fade-up"
+                      data-aos-duration="1000"
+                      data-aos-delay="200"
+                    />
+                    <input
+                      type="text"
+                      name="state"
+                      placeholder="State/Province"
+                      class="service-inputs"
+                      required
+                      data-aos="fade-up"
+                      data-aos-duration="1000"
+                      data-aos-delay="200"
+                    />
+                    <input
+                      type="text"
+                      name="zip"
+                      placeholder="ZIP/Postal Code"
+                      class="service-inputs"
+                      required
+                      data-aos="fade-up"
+                      data-aos-duration="1000"
+                      data-aos-delay="200"
+                    />
+                  </div>
+
+                  <div class="service-detail">
+                    <h3
+                      data-aos="fade-up"
+                      data-aos-duration="1000"
+                      data-aos-delay="300"
+                    >
+                      Service Details
+                    </h3>
+                    <div class="service-type">
+                      <label
+                        for="service_type"
+                        data-aos="fade-up"
+                        data-aos-duration="1000"
+                        data-aos-delay="300"
+                        >Service Type</label
+                      >
+                      <input
+                        type="text"
+                        value="Car Cleaning"
+                        name="service"
+                        id=""
+                        readonly
+                        required
+                        data-aos="fade-up"
+                        data-aos-duration="1000"
+                        data-aos-delay="300"
+                      />
+                    </div>
+
+                    <div class="service-frequency">
+                      <label
+                        for="frequency"
+                        data-aos="fade-up"
+                        data-aos-duration="1000"
+                        data-aos-delay="300"
+                        >Cleaning Frequency:</label
+                      >
+                      <select
+                        name="frequency"
+                        id="frequency"
+                        required
+                        data-aos="fade-up"
+                        data-aos-duration="1000"
+                        data-aos-delay="300"
+                      >
+                        <option value="monthly">Monthly</option>
+                        <option value="two_monthly">Two - Monthly</option>
+                        <option value="three_monthly">Three - Monthly</option>
+                      </select>
+                    </div>
+
+                    <label
+                      for="cleaning_date"
+                      data-aos="fade-up"
+                      data-aos-duration="1000"
+                      data-aos-delay="300"
+                      >Preferred Date:</label
+                    >
+                    <input
+                      type="date"
+                      name="cleaning_date"
+                      id="cleaning_date"
+                      required
+                      data-aos="fade-up"
+                      data-aos-duration="1000"
+                      data-aos-delay="300"
+                    />
+                    <label
+                      for="cleaning_time"
+                      data-aos="fade-up"
+                      data-aos-duration="1000"
+                      data-aos-delay="300"
+                      >Preferred Time:</label
+                    >
+                    <input
+                      type="time"
+                      name="cleaning_time"
+                      id="cleaning_time"
+                      required
+                      data-aos="fade-up"
+                      data-aos-duration="1000"
+                      data-aos-delay="300"
+                    />
+                  </div>
+
+                  <div class="worker-detail">
+                    <h3
+                      data-aos="fade-up"
+                      data-aos-duration="1000"
+                      data-aos-delay="400"
+                    >
+                      Worker Information
+                    </h3>
+                    <label
+                      for="worker_group"
+                      data-aos="fade-up"
+                      data-aos-duration="1000"
+                      data-aos-delay="400"
+                      >Select worker group</label
+                    >
+                    <select
+                      name="worker_group"
+                      id="worker_group"
+                      required
+                      data-aos="fade-up"
+                      data-aos-duration="1000"
+                      data-aos-delay="400"
+                    >
+                      <option value="male">Male</option>
+                      <option value="female">Female</option>
+                      <option value="combine(male & female)">Combines(Male and Female)</option>
+                    </select>
+
+                    <div class="worker-count">
+                      <label
+                        for="workers-default"
+                        id="default-label"
+                        data-aos="fade-up"
+                        data-aos-duration="1000"
+                        data-aos-delay="400"
+                        >Your workers (Default)</label
+                      >
+                      <input
+                        type="text"
+                        value="3"
+                        id="default"
+                        name="workers"
+                        readonly
+                        data-aos="fade-up"
+                        data-aos-duration="1000"
+                        data-aos-delay="400"
+                      /><br />
+
+                      <label
+                        for="workers-custome"
+                        data-aos="fade-up"
+                        data-aos-duration="1000"
+                        data-aos-delay="400"
+                        >Select Customize Worker</label
+                      >
+                      <select
+                       
+                        id="workers-numbers"
+                        required
+                        data-aos="fade-up"
+                        data-aos-duration="1000"
+                        data-aos-delay="400"
+                      >
+                        <option value="noneValue">None</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                        <option value="13">13</option>
+                        <option value="14">14</option>
+                        <option value="15">15</option>
+                        <option value="16">16</option>
+                        <option value="17">17</option>
+                        <option value="18">18</option>
+                        <option value="19">19</option>
+                        <option value="20">20</option>
+                        <option value="21">21</option>
+                        <option value="22">22</option>
+                        <option value="23">23</option>
+                        <option value="24">24</option>
+                        <option value="25">25</option>
+                        <option value="26">26</option>
+                        <option value="27">27</option>
+                        <option value="28">28</option>
+                        <option value="29">29</option>
+                        <option value="30">30</option>
+                        <option value="31">31</option>
+                        <option value="32">32</option>
+                        <option value="33">33</option>
+                        <option value="34">34</option>
+                        <option value="35">35</option>
+                        <option value="36">36</option>
+                        <option value="37">37</option>
+                        <option value="38">38</option>
+                        <option value="39">39</option>
+                        <option value="40">40</option>
+                        <option value="41">41</option>
+                        <option value="42">42</option>
+                        <option value="43">43</option>
+                        <option value="44">44</option>
+                        <option value="45">45</option>
+                        <option value="46">46</option>
+                        <option value="47">47</option>
+                        <option value="48">48</option>
+                        <option value="49">49</option>
+                        <option value="50">50</option>
+                      </select>
+                    </div>
+                    <label
+                      for="price"
+                      data-aos="fade-up"
+                      data-aos-duration="1000"
+                      data-aos-delay="500"
+                      >Price</label
+                    >
+                    <input
+                      type="text"
+                      name="prices"
+                      id="main-price"
+                      value="$360"
+                      readonly
+                      data-aos="fade-up"
+                      data-aos-duration="1000"
+                      data-aos-delay="500"
+                    />
+                  </div>
+                </div>
+                <label class="terms">
+                  <input
+                    type="checkbox"
+                    name="terms"
+                    required
+                    data-aos="fade-up"
+                    data-aos-duration="1000"
+                    data-aos-delay="700"
+                  />
+                  <p
+                    data-aos="fade-up"
+                    data-aos-duration="1000"
+                    data-aos-delay="700"
+                  >
+                    I agree to the Terms and Conditions
+                  </p> </label
+                ><br />
+
+                <input
+                  type="submit"
+                  name="submit"
+                  value="Buy now"
+                  class="btn buy"
+                  id="continueBtn"
+                />
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!----- footer  ----->
+
+      <div class="footer">
+        <div class="container">
+          <h3>follow us</h3>
+          <div class="social-links">
+            <a
+              href="https://www.facebook.com/profile.php?id=100084174810296"
+              title="facebook"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+            <a href="#" title="twitter"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com/sohil_.17/" title="instagram"
+              ><i class="fab fa-instagram"></i
+            ></a>
+            <a href="#" title="youtube"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!----- styel-switcher  ----->
+
+    <div class="style-switcher js-style-switcher">
+      <button
+        type="button"
+        class="style-switcher-toggler js-style-switcher-toggler"
+      >
+        <i class="fas fa-cog"></i>
+      </button>
+      <div class="style-switcher-main">
+        <h2>style switcher</h2>
+        <div class="style-switcher-item">
+          <p>Theme Color</p>
+          <div class="theme-color">
+            <input
+              type="range"
+              min="0"
+              max="360"
+              class="hue-slider js-hue-slider"
+            />
+            <div class="hue">Hue:<span class="js-hue"></span></div>
+          </div>
+        </div>
+        <div class="style-switcher-item">
+          <label class="form-switch">
+            <span>Dark Mode</span>
+            <input type="checkbox" class="js-dark-mode" />
+            <div class="box"></div>
+          </label>
+        </div>
+      </div>
+    </div>
+
+    <script src="aos.js"></script>
+    <script src="script.js"></script>
+    <script src="service.js"></script>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        let index = 0;
+        const slides = document.querySelectorAll(".slider img");
+        const totalSlides = slides.length;
+
+        function showNextSlide() {
+          index = (index + 1) % totalSlides;
+          document.querySelector(".slider").style.transform = `translateX(-${
+            index * 100
+          }%)`;
+        }
+
+        setInterval(showNextSlide, 3000);
+      });
+    </script>
+  </body>
+</html>

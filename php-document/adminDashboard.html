@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="dashboard.css" />
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="../aos.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  </head>
+  <body>
+    <div class="preloader js-preloader">
+      <div></div>
+    </div>
+
+    <div class="page-wrapper">
+      <header class="header js-header">
+        <div class="container">
+          <div class="logo" data-aos="fade-down" data-aos-duration="1000">
+            <a href="../index.php">BrightWave <span>Cleaners</span></a>
+          </div>
+          <button
+            type="button"
+            class="nav-toggler js-nav-toggler"
+            data-aos="fade-down"
+            data-aos-duration="1000"
+          >
+            <span></span>
+          </button>
+          <nav class="nav js-nav">
+            <ul data-aos="fade-down" data-aos-duration="1000">
+              <li><a href="../index.php#home">Home</a></li>
+              <li><a href="../index.php#about">About</a></li>
+              <li><a href="../index.php#services">Services</a></li>
+              <li><a href="../index.php#pricing">Pricing</a></li>
+              <li><a href="../index.php#team">Team</a></li>
+              <li><a href="../index.php#contact">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+
+      <section class="dashboard section-padding" id="dashboard">
+        <div class="container">
+          <div class="grid">
+            <div class="dashboard-content">
+              <h1>Admin Dashboard</h1>
+              <button id="showAdmin" class="dashboard-btn">Show Admin</button>
+              <button id="showUser" class="dashboard-btn">Show User</button>
+              <button id="showBookService" class="dashboard-btn">
+                Show Book Service
+              </button>
+              <button id="showPayment" class="dashboard-btn">
+                Show Payment Details
+              </button>
+              <button id="showService" class="dashboard-btn">
+                Show Feedback Details
+              </button>
+              <div class="table-container">
+                <div id="dataContainer" style="display: contents"></div>
+                <div id="detailsContainer"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!----- footer  ----->
+
+      <div class="footer">
+        <div class="container">
+          <h3>follow us</h3>
+          <div class="social-links">
+            <a
+              href="https://www.facebook.com/profile.php?id=100084174810296"
+              title="facebook"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+            <a href="#" title="twitter"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com/sohil_.17/" title="instagram"
+              ><i class="fab fa-instagram"></i
+            ></a>
+            <a href="#" title="youtube"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!----- styel-switcher  ----->
+
+    <div class="style-switcher js-style-switcher">
+      <button
+        type="button"
+        class="style-switcher-toggler js-style-switcher-toggler"
+      >
+        <i class="fas fa-cog"></i>
+      </button>
+      <div class="style-switcher-main">
+        <h2>style switcher</h2>
+        <div class="style-switcher-item">
+          <p>Theme Color</p>
+          <div class="theme-color">
+            <input
+              type="range"
+              min="0"
+              max="360"
+              class="hue-slider js-hue-slider"
+            />
+            <div class="hue">Hue:<span class="js-hue"></span></div>
+          </div>
+        </div>
+        <div class="style-switcher-item">
+          <label class="form-switch">
+            <span>Dark Mode</span>
+            <input type="checkbox" class="js-dark-mode" />
+            <div class="box"></div>
+          </label>
+        </div>
+      </div>
+    </div>
+
+    <script src="dashboard.js"></script>
+    <script src="../script.js"></script>
+    <script src="../aos.js"></script>
+  </body>
+</html>
